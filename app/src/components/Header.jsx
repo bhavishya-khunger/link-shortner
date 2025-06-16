@@ -22,7 +22,7 @@ const Header = () => {
     const navigate = useNavigate();
 
     const { user, fetchUser } = UrlState();
-    console.log(user)
+    // console.log(user)
 
     return (
         <>
@@ -48,7 +48,9 @@ const Header = () => {
                                     {user?.user_metadata?.name}
                                 </DropdownMenuLabel>
                                 <DropdownMenuSeparator className='hover:cursor-pointer' />
-                                <DropdownMenuItem>
+                                <DropdownMenuItem
+                                    onClick={() => navigate('/dashboard')}
+                                >
                                     <Link2Icon />My Links
                                 </DropdownMenuItem>
                                 <DropdownMenuItem
