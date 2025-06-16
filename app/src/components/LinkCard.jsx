@@ -45,7 +45,7 @@ const LinkCard = ({ url = {}, fetchUrls }) => {
               rel="noopener noreferrer"
               className="text-blue-600 hover:underline break-words font-medium text-base"
             >
-              {import.meta.env.FRONTEND_URI}/{url?.custom_url || url?.short_url}
+              https://link-shortner-ixdc.vercel.app/{url?.custom_url || url?.short_url}
             </a>
           </div>
 
@@ -65,7 +65,7 @@ const LinkCard = ({ url = {}, fetchUrls }) => {
           variant="ghost"
           title="Copy link"
           onClick={() =>
-            navigator.clipboard.writeText(`https://trimrr.in/${url?.short_url}`)
+            navigator.clipboard.writeText(`https://link-shortner-ixdc.vercel.app/${url?.short_url}`)
           }
         >
           <Copy size={18} />

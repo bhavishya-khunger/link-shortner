@@ -117,8 +117,10 @@ export function CreateLink() {
           onChange={handleChange}
         />
         {errors.longUrl && <Error message={errors.longUrl} />}
-        <div className="flex items-center gap-2">
-          <Card className="p-2">{import.meta.env.FRONTEND_URI}</Card> /
+        <div className="flex flex-col items-center gap-2">
+          <div className="flex gap-2 items-center">
+            <Card className="p-2 text-xs">https://link-shortner-ixdc.vercel.app</Card> /
+          </div>
           <Input
             id="customUrl"
             placeholder="Custom Link (optional)"

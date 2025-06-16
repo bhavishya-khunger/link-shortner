@@ -70,7 +70,7 @@ const LinkPage = () => {
             target="_blank"
             className="text-blue-600 font-semibold break-all hover:underline"
           >
-            {import.meta.env.FRONTEND_URI}/{link}
+            {'https://link-shortner-ixdc.vercel.app'}/{link}
           </a>
 
           <a
@@ -91,7 +91,7 @@ const LinkPage = () => {
             <Button
               variant="outline"
               onClick={() =>
-                navigator.clipboard.writeText(`https://trimrr.in/${link}`)
+                navigator.clipboard.writeText(`https://link-shortner-ixdc.vercel.app/${link}`)
               }
             >
               <Copy className="mr-1 w-4 h-4" /> Copy
